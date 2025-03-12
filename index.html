@@ -18,8 +18,11 @@
                 <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -34,16 +37,31 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg"></div>
+        <div class="particles"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="split-text">I'm Moeed ul Hassan</h1>
-                <p class="fade-in">MERN Stack Developer based in Pakistan</p>
-                <div class="cta-wrapper">
-                    <button class="cta-button" onclick="scrollToSection('about')">
+                <h1 class="hero-title">I'm Moeed ul Hassan</h1>
+                <p class="hero-subtitle">MERN Stack Developer based in Pakistan</p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary" onclick="scrollToSection('about')">
                         Explore My Work
                         <i class="fas fa-arrow-down"></i>
                     </button>
+                    <button class="cta-button secondary" onclick="scrollToSection('contact')">
+                        Get in Touch
+                        <i class="fas fa-envelope"></i>
+                    </button>
                 </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </section>
@@ -55,10 +73,65 @@
             <div class="about-content">
                 <div class="about-image reveal-image">
                     <img src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2" alt="Profile">
+                    <div class="experience-badge">
+                        <span class="years">5+</span>
+                        <span class="text">Years<br>Experience</span>
+                    </div>
                 </div>
                 <div class="about-text">
                     <p class="reveal-text">With over 5 years of experience in web development, I specialize in creating beautiful, functional, and user-friendly applications.</p>
                     <p class="reveal-text">My passion lies in bridging the gap between design and development, creating seamless experiences that users love.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title">My Process</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>1. Discovery</h3>
+                    <p>Understanding your needs and project requirements thoroughly</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>2. Planning</h3>
+                    <p>Creating detailed project roadmap and architecture</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>3. Development</h3>
+                    <p>Building your solution with cutting-edge technologies</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>4. Launch</h3>
+                    <p>Deploying and maintaining your successful project</p>
                 </div>
             </div>
         </div>
@@ -162,27 +235,117 @@
                 <div class="skill-card">
                     <i class="fab fa-react"></i>
                     <span>React</span>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-node-js"></i>
                     <span>Node.js</span>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-js"></i>
                     <span>JavaScript</span>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 92%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-database"></i>
                     <span>MongoDB</span>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 88%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-css3"></i>
                     <span>CSS3</span>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-html5"></i>
                     <span>HTML5</span>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%"></div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Moeed delivered our project on time and exceeded our expectations. His attention to detail and problem-solving skills are exceptional."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="John Doe">
+                            <div class="author-info">
+                                <h4>John Doe</h4>
+                                <span>CEO, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Working with Moeed was a great experience. He understood our requirements perfectly and delivered a high-quality solution."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Jane Smith">
+                            <div class="author-info">
+                                <h4>Jane Smith</h4>
+                                <span>Product Manager, InnovateCo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Coding Best Practices">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="far fa-comments"></i> 12 Comments</span>
+                        </div>
+                        <h3>Modern Web Development Best Practices</h3>
+                        <p>Exploring the latest trends and best practices in modern web development...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="MERN Stack">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 8, 2024</span>
+                            <span><i class="far fa-comments"></i> 8 Comments</span>
+                        </div>
+                        <h3>Getting Started with MERN Stack</h3>
+                        <p>A comprehensive guide to building applications with MongoDB, Express, React, and Node.js...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -192,6 +355,23 @@
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
             <p>I'm always open to new opportunities and collaborations.</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@example.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Lahore, Pakistan</p>
+                </div>
+            </div>
             <div class="social-links">
                 <a href="https://github.com" target="_blank" class="social-link">
                     <i class="fab fa-github"></i>
